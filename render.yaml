@@ -43,7 +43,7 @@ services:
     name: smk-frontend
     runtime: static
     rootDir: frontend
-    buildCommand: yarn install --frozen-lockfile=false && yarn build
+    buildCommand: yarn install && yarn build
     staticPublishPath: build
     envVars:
       - key: REACT_APP_BACKEND_URL
